@@ -17,7 +17,8 @@ export default {
         salmon: "#fa6e79"
       },
       fontFamily: {
-        work: ["Work Sans", "sans-serif"]
+        work: ["Work Sans", "sans-serif"],
+        tiny5: ["Tiny5", "serif"]
       }
     },
   },

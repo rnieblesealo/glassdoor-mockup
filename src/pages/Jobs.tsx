@@ -14,13 +14,16 @@ import { TbBrandAirbnb } from "react-icons/tb";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaBell } from "react-icons/fa";
 import { IoPersonCircleSharp } from "react-icons/io5";
+import { FaHeart } from "react-icons/fa6"
 
 import JobListing from "../components/JobListing"
 
 export default function JobsPage() {
   const main = clsx(
+    "overflow-auto",
+
     "w-screen",
-    "h-min-content",
+    "h-screen",
 
     "bg-gradient-to-b",
     "from-black",
@@ -144,6 +147,34 @@ export default function JobsPage() {
     "overflow-x-auto"
   )
 
+  const footer = clsx(
+    "w-full",
+    "h-[30px]",
+
+    "flex",
+    "items-center",
+    "self-end",
+
+    "text-black",
+    "text-center",
+  )
+
+  const footerText = clsx(
+    "w-full",
+
+    "flex",
+    "flex-row",
+    "items-center",
+    "justify-center",
+
+    "gap-[5px]",
+
+    "font-bold",
+    "font-tiny5",
+    
+    "text-white"
+  )
+
   function JobTitle() {
     return (
       <div className={"flex flex-col"}>
@@ -171,7 +202,7 @@ export default function JobsPage() {
 
   function EasyApplyButton() {
     return (
-      <div className={`${uploadresume} ${text} w-min-content h-[40px] p-[10px]`}>
+      <div className={`${uploadresume} ${text} w-[130px] h-[40px] p-[10px] overflow-hidden`}>
         <FaBoltLightning /> Easy Apply
       </div>
     )
@@ -546,6 +577,9 @@ export default function JobsPage() {
             />
           </JobInfo>
         </Jobs>
+        <footer className={footer}>
+          <span className={footerText}>Made by Rafa with <FaHeart color="#F90605" /></span>
+        </footer>
       </div>
     </>
   )
