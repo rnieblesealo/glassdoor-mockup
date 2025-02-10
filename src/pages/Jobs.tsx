@@ -141,6 +141,7 @@ export default function JobsPage() {
     "flex w-[65%] flex-col h-min-content rounded-[8px] bg-white",
     "p-[20px]",
     "gap-[20px]",
+    "overflow-x-auto"
   )
 
   function JobTitle() {
@@ -245,9 +246,11 @@ export default function JobsPage() {
   function CompanyOverview({ children }: CompanyOverviewProps) {
     return (
       <>
-        <span className={`${heading} text-black w-full h-[min-content]`}>Company overview</span>
-        <div className="grid grid-cols-2 p-[5px]">
-          {children}
+        <div className="w-[615px] flex flex-col overflow-x-hidden">
+          <span className={`${heading} text-black w-full h-[min-content] pb-[15px]`}>Company overview</span>
+          <div className="grid grid-cols-2 p-[5px]">
+            {children}
+          </div>
         </div>
       </>
     )
@@ -279,7 +282,7 @@ export default function JobsPage() {
             <div className={`text-white font-bold text-[20px] flex justify-center items-center bg-green w-full rounded-[8px] p-[5px] z-10`}>
               Pros
             </div>
-            <div className="bg-gray w-[90%] p-[8px] rounded-[8px] mt-[-5px]">
+            <div className="bg-gray w-[90%] p-[8px] rounded-[8px] mt-[-5px] overflow-hidden">
               <ul className="list-disc list-inside">
                 {proListItems ?? "None listed..."}
               </ul>
@@ -289,7 +292,7 @@ export default function JobsPage() {
             <div className={`text-white font-bold text-[20px] flex justify-center items-center bg-red w-full rounded-[8px] p-[5px] z-10`}>
               Cons
             </div>
-            <div className="bg-gray w-[90%] p-[8px] rounded-[8px] mt-[-5px]">
+            <div className="bg-gray w-[90%] p-[8px] rounded-[8px] mt-[-5px] overflow-hidden">
               <ul className="list-disc list-inside">
                 {conListItems ?? "None listed..."}
               </ul>
