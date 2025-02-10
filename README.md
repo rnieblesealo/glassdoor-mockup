@@ -18,8 +18,6 @@ This is a mockup page I built in an attempt to improve upon Glassdoor's job sear
 
 *This is by no means a complete product!* It was built in a day, and is meant to serve as a proof-of-concept only.
 
-Things may not look right and break on some screen sizes!
-
 ---
 
 **Built by Rafa with ❤️**
