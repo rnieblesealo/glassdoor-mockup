@@ -4,7 +4,7 @@
 
 Hey there!
 
-This is a mockup page I built in an attempt to improve on Glassdoor's job search page.
+This is a mockup page I built in an attempt to improve upon Glassdoor's job search page as an ideation exercise.
 
 [**Click here to access it!**](https://glassdoor-mockup.vercel.app/)
 
