@@ -1,10 +1,12 @@
-# Glassdoor Jobs Page Mockup
+# Glassdoor Job Page Design Mockup 
 
 ![preview](./public/github/preview.png)
 
 Hey there!
 
 This is a mockup page I built in an attempt to improve on Glassdoor's job search page.
+
+[**Click here to access it!**](https://glassdoor-mockup.vercel.app/)
 
 ### 🩹 Things It Addresses 
 
