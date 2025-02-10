@@ -75,7 +75,7 @@ export default function JobsPage() {
 
   const searchbar = clsx(
     "w-[60%]",
-    "h-[40px]",
+    "min-h-[40px]",
 
     "bg-black",
 
