@@ -20,7 +20,7 @@ export default function JobListing({ companyName, jobTitle, rating, location, sa
   const main = clsx(
     "w-full h-min-content bg-red-500 rounded-[8px]",
     "p-[5px]",
-    
+
     "gap-[3px]",
 
     "flex",
